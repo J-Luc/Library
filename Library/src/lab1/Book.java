@@ -22,6 +22,7 @@ public class Book {
      */
     public Book(String bookTitle) {
         // TODO: Implement this method
+        String b = bookTitle;
     }
    
     /** 
@@ -29,6 +30,7 @@ public class Book {
      */
     public void rented() {
         // TODO: Implement this method
+        int x = 2;
     }
    
     /**
