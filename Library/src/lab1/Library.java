@@ -2,12 +2,32 @@ package lab1;
 
 /**
  * A representation of a library of books.
- * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi Khatchadourian</a>.
+ *
+ * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi
+ * Khatchadourian</a>.
  */
 public class Library {
     // TODO: Add the missing implementation to this class
 
+    String libraryLocation;
+
+    public Library(String location) {
+
+        libraryLocation = location;
+    }
+
+    String[] firstLibraryCollection = new String[4];
+
+    public void addBook(Book book) {
+        for (int i = 0; i < 4; i++) {
+            firstLibraryCollection[i] = book.getTitle();
+            i++;
+
+        }
+    }
+
     public static void main(String[] args) {
+
         // Create two libraries
         Library firstLibrary = new Library("10 Main St.");
         Library secondLibrary = new Library("228 Liberty St.");
